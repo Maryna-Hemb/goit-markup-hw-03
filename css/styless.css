@@ -133,7 +133,7 @@ img {
 .order-button {
   width: 216px;
   min-height: 50px;
-  padding: 9px 30px;
+  padding: 10px 32px;
   font-family: inherit;
   color: var(--active-button-text-color);
   font-weight: 700;
@@ -144,7 +144,7 @@ img {
 
   background-color: var(--accent-color);
   cursor: pointer;
-  border: 1px solid transparent;
+  border: none;
   border-radius: var(--btn-radius);
 }
 
