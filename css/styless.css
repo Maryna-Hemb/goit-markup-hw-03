@@ -133,7 +133,7 @@ img {
 .order-button {
   width: 216px;
   min-height: 50px;
-  padding: 10px 32px;
+  padding: 8px 30px;
   font-family: inherit;
   color: var(--active-button-text-color);
   font-weight: 700;
