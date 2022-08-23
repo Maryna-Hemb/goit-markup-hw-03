@@ -18,6 +18,9 @@
   /* fonts */
   --main-font-family: 'Roboto', sans-serif;
   --secondary-font-family: 'Raleway', sans-serif;
+
+  /* other */
+  --btn-radius: 4px;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -28,10 +31,41 @@ body {
   background-color: var(--main-background-color);
 }
 
-.list {
-  list-style: none;
+/* reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+/* container */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+}
 /* header styless */
 /* logo */
 .logo {
@@ -39,7 +73,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  text-decoration: none;
 }
 .logo-begin {
   color: var(--accent-color);
@@ -53,7 +86,6 @@ body {
   color: var(--title-text-color);
   font-weight: 500;
   line-height: calc(16 / 14);
-  text-decoration: none;
 }
 .site-nav .menu:hover,
 .site-nav .menu:focus {
@@ -64,12 +96,11 @@ body {
 }
 
 /* contacts */
-.auth-nav .link {
+.auth-nav.link {
   color: var(--main-text-color);
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
@@ -80,17 +111,29 @@ body {
 /* main */
 .order {
   background-color: var(--dark-background-color);
+  text-align: center;
 }
+
+.order .container {
+  padding-top: 195px;
+  padding-bottom: 200px;
+}
+
 .main-title {
+  margin-bottom: 35px;
+
   color: var(--main-title-color);
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
 .order-button {
+  width: 216px;
+  min-height: 50px;
+  padding: 9px 30px;
   font-family: inherit;
   color: var(--active-button-text-color);
   font-weight: 700;
@@ -101,7 +144,10 @@ body {
 
   background-color: var(--accent-color);
   cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: var(--btn-radius);
 }
+
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -146,7 +192,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  text-decoration: none;
 }
 .footer-logo-end {
   color: var(--logo-end-light);
@@ -158,12 +203,11 @@ body {
 .adress-street {
   color: var(--main-title-color);
   font-style: normal;
-  line-height: calc(14 / 24);
+  line-height: calc(24 / 14);
 }
 .contact-link {
   color: var(--footer-link);
   line-height: calc(24 / 14);
-  text-decoration: none;
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -191,7 +235,6 @@ body {
 }
 .cards-item .link {
   color: inherit;
-  text-decoration: none;
 }
 .cards-title {
   color: var(--title-text-color);
