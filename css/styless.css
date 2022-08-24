@@ -137,15 +137,11 @@ img {
   margin-left: auto;
 }
 
-.auth-nav > .item {
+.auth-nav .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
-  /* outline: 1px solid rgb(6, 94, 34); */
-}
-
-.auth-nav.link {
   color: var(--main-text-color);
   font-weight: 500;
   line-height: calc(16 / 14);
