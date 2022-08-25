@@ -320,9 +320,6 @@ img {
 
 .footer {
   background-color: var(--dark-background-color);
-}
-
-.footer > .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -346,14 +343,16 @@ img {
   font-style: normal;
 }
 .adress-street {
+  margin-bottom: 9px;
+
   color: var(--main-title-color);
   font-style: normal;
   line-height: calc(24 / 14);
 }
 
-.auth-adress > .item {
+.mail {
   display: block;
-  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 .contact-link {
@@ -430,14 +429,14 @@ img {
 }
 
 .card-content {
-  margin-top: var(--gap-pagePF-elements-text);
-  margin-bottom: var(--gap-pagePF-elements-text);
-  margin-right: 24px;
-  margin-left: 24px;
-}
+  padding-top: var(--gap-pagePF-elements-text);
+  padding-bottom: var(--gap-pagePF-elements-text);
+  padding-right: 24px;
+  padding-left: 24px;
 
-.card-border {
-  border: 1px solid var(--card-border-color);
+  border-right: 1px solid var(--card-border-color);
+  border-bottom: 1px solid var(--card-border-color);
+  border-left: 1px solid var(--card-border-color);
 }
 
 .cards-title {
