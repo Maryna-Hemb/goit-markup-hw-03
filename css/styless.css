@@ -350,8 +350,7 @@ img {
   line-height: calc(24 / 14);
 }
 
-.mail {
-  display: block;
+.auth-adress > .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
